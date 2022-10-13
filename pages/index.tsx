@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Button from "../components/Button";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
@@ -10,11 +11,15 @@ export default function Home() {
       <div className="flex items-center">
         <Container className="">
           <div className="flex items-center justify-center flex-col max-w-[600px] mb-44 mx-auto">
-            <h1 className="text-6xl font-extrabold text-slate-900 mb-8 text-center">
+            <motion.h1
+              animate={{ opacity: 1, y: -10 }}
+              initial={{ opacity: 0, y: 0 }}
+              className="text-6xl font-extrabold text-slate-900 mb-8 text-center"
+            >
               Der offizielle{" "}
               <span className="text-cyan-600">Kirchenaustritt</span> in der
               Schweiz ist <span className="text-cyan-600">gratis</span>.
-            </h1>
+            </motion.h1>
             <p className="text-xl mb-1 text-center font-bold">
               Lassen Sie sich nichts anderes erzählen.
             </p>
