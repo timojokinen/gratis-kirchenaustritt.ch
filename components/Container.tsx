@@ -12,10 +12,13 @@ const Container: React.FC<PropsWithChildren<OptionalProps>> = ({
   className,
   tag,
 }) => {
-  const comp = React.createElement(tag || "div", {
-    className: cx("container mx-auto px-4", className),
-    children,
-  });
+  const comp = React.createElement(
+    tag || "div",
+    {
+      className: cx("container mx-auto px-4", className),
+    },
+    children
+  );
   return <>{comp}</>;
 };
 
