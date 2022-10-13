@@ -69,14 +69,19 @@ export default function Home() {
                   }}
                 </Form>
               </div>
-              <div className="bg-cyan-100 rounded px-6 py-8">
+              <div className="from-purple-100 to-blue-100 rounded px-6 py-8 bg-gradient-to-br">
                 <h3 className="text-xl font-extrabold mb-4">
                   Häufig gestellte Fragen
                 </h3>
-                <ul className="list-disc pl-4 flex flex-col gap-2">
+                <ul className="list-disc pl-4 flex flex-col gap-2 mb-8">
                   <li>
                     <AppLink href="/">
                       Wie trete ich aus der Kirche aus?
+                    </AppLink>
+                  </li>
+                  <li>
+                    <AppLink href="/">
+                      An welche Adresse muss ich den Austrittsbrief schicken?
                     </AppLink>
                   </li>
                   <li>
@@ -97,7 +102,13 @@ export default function Home() {
                   <li>
                     <AppLink href="/">Was geschieht mit meinen Daten?</AppLink>
                   </li>
+                  <li>
+                    <AppLink href="/">
+                      Wie funktioniert der Wiedereintritt?
+                    </AppLink>
+                  </li>
                 </ul>
+                <Button className="w-full">Mehr Informationen</Button>
               </div>
             </div>
           </div>

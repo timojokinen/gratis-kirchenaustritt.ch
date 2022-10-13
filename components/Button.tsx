@@ -11,7 +11,8 @@ const Button: React.FC<Props> = ({ className, children, type }) => {
     <button
       type={type}
       className={cx(
-        "bg-slate-900 text-white font-extrabold py-4 px-8 rounded hover:bg-cyan-600 transition-all tracking-wide outline-none focus-visible:ring-2 focus-visible:ring-cyan-600"
+        "bg-slate-900 text-white font-extrabold py-4 px-8 rounded hover:bg-opacity-90 hover:scale-[1.02] transition-all tracking-wide outline-none focus-visible:ring-2 focus-visible:ring-cyan-600",
+        className
       )}
     >
       {children}

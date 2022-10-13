@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import Button from "../components/Button";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
+import GradientHighlightText from "../components/GradientHighlightText";
 import Header from "../components/Header";
 
 export default function Home() {
   return (
     <div>
       <Header></Header>
-      <div className="flex items-center">
+      <div className="flex items-center pt-8">
         <Container className="">
           <div className="flex items-center justify-center flex-col max-w-[600px] mb-44 mx-auto">
             <motion.h1
@@ -17,8 +18,9 @@ export default function Home() {
               className="text-6xl font-extrabold text-slate-900 mb-8 text-center"
             >
               Der offizielle{" "}
-              <span className="text-cyan-600">Kirchenaustritt</span> in der
-              Schweiz ist <span className="text-cyan-600">gratis</span>.
+              <GradientHighlightText>Kirchenaustritt</GradientHighlightText> in
+              der Schweiz ist{" "}
+              <GradientHighlightText>gratis</GradientHighlightText>.
             </motion.h1>
             <p className="text-xl mb-1 text-center font-bold">
               Lassen Sie sich nichts anderes erzählen.
@@ -36,26 +38,29 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-3 gap-4">
               <div className="flex items-center flex-col">
-                <span className="text-9xl font-extrabold text-cyan-600">1</span>
+                <span className="text-9xl font-extrabold">
+                  <GradientHighlightText>1</GradientHighlightText>
+                </span>
                 <p className="text-xl text-center">
                   Formular ausfüllen, ausdrucken und unterschreiben
                 </p>
               </div>
               <div className="flex items-center flex-col">
-                <span className="text-9xl font-extrabold text-cyan-600">2</span>
+                <span className="text-9xl font-extrabold">
+                  <GradientHighlightText>2</GradientHighlightText>
+                </span>
                 <p className="text-xl text-center">
                   Unterschriebenes Formular per eingeschriebenen Brief an die
                   Kirche senden
                 </p>
               </div>
               <div className="flex items-center flex-col">
-                <span className="text-9xl font-extrabold text-cyan-600">3</span>
+                <span className="text-9xl font-extrabold">
+                  <GradientHighlightText>3</GradientHighlightText>
+                </span>
                 <p className="text-xl text-center">
                   Nach 6-8 Wochen erhalten Sie eine Bestätigung von der Kirche
                 </p>
-              </div>
-              <div className="flex items-center flex-col">
-                <span className="text-9xl font-extrabold text-cyan-600">4</span>
               </div>
             </div>
           </div>
